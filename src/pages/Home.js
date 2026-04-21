@@ -1,19 +1,14 @@
 import React from "react";
 import "./Home.css";
-import profile from "../profile.jpg";
+
 function Home() {
   return (
     <div className="home-container">
-      <img
-        src={profile}
-        alt="Profile"
-        className="profile-pic"
-      />
 
       <h1>Your Name</h1>
 
       <section>
-        <h2>About Me</h2>f
+        <h2>About Me</h2>
         <p>
           I am a student interested in web development, software engineering,
           and building useful applications.
@@ -35,6 +30,7 @@ function Home() {
         <p><strong>College Email:</strong> yourname@college.edu</p>
         <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Python</p>
       </section>
+
     </div>
   );
 }
