@@ -1,31 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav style={{ padding: "15px", backgroundColor: "#222" }}>
-      <NavLink
-        to="/"
-        style={({ isActive }) => ({
-          color: isActive ? "yellow" : "white",
-          marginRight: "20px",
-          textDecoration: "none",
-          fontWeight: "bold"
-        })}
-      >
-        Home
-      </NavLink>
+    <nav className="navbar">
+      <div className="nav-brand">Naredla Adit Reddy</div>
 
-      <NavLink
-        to="/projects"
-        style={({ isActive }) => ({
-          color: isActive ? "yellow" : "white",
-          textDecoration: "none",
-          fontWeight: "bold"
-        })}
-      >
-        Projects
-      </NavLink>
+      <div className="nav-links">
+        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          Home
+        </NavLink>
+
+        <NavLink
+          to="/projects"
+          className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+        >
+          Projects
+        </NavLink>
+      </div>
     </nav>
   );
 }

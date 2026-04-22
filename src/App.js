@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="app-shell">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,32 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: Inter, Arial, sans-serif;
+  background: #020616;
 }
 
-h1, h2 {
-  color: #222;
-}
-
-a {
-  color: #0077cc;
-}
-
-.home-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background: white;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px auto;
-  object-fit: cover;
+.app-shell {
+  min-height: 100vh;
 }
