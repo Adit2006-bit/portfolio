@@ -5,16 +5,25 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="nav-brand">Naredla Adit Reddy</div>
+      <div className="nav-brand">
+        <span className="brand-dot"></span>
+        <div>
+          <p className="brand-small">Portfolio</p>
+          <h2>Naredla Adit Reddy</h2>
+        </div>
+      </div>
 
       <div className="nav-links">
-        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+        >
           Home
         </NavLink>
 
         <NavLink
           to="/projects"
-          className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
         >
           Projects
         </NavLink>

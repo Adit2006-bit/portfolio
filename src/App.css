@@ -2,10 +2,19 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Inter, Arial, sans-serif;
-  background: #020616;
+  background: #040915;
+}
+
+a,
+button {
+  font-family: inherit;
 }
 
 .app-shell {
